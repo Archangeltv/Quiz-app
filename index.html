@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="quiz">
+        <h1 class="question">A question</h1>
+        <div class="options">
+          <p class="input">
+            <input
+              type="radio"
+              name="options"
+              value="1"
+              id="a"
+              class="answer"
+            /><label for="a" id="opt1"></label>
+          </p>
+          <p class="input">
+            <input
+              type="radio"
+              name="options"
+              id="b"
+              value="2"
+              class="answer"
+            /><label for="b" id="opt2"></label>
+          </p>
+          <p class="input">
+            <input
+              type="radio"
+              name="options"
+              id="c"
+              value="3"
+              class="answer"
+            /><label for="c" id="opt3"></label>
+          </p>
+          <p class="input">
+            <input
+              type="radio"
+              id="d"
+              name="options"
+              value="4"
+              class="answer"
+            /><label for="d" id="opt4"></label>
+          </p>
+        </div>
+        <button id="next">Next</button>
+      </div>
+      <div class="result">
+        <h1>You scored <span id="score"></span>/5 in this quiz</h1>
+        <p>Thanks for your participation</p>
+        <a href="index.html"><button>Go Again</button></a>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

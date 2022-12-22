@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;800&display=swap");
+
+:root {
+  --LightCyan: hsl(193, 38%, 86%);
+  --NeonGreen: hsl(150, 100%, 66%);
+  --GrayishBlue: hsl(217, 19%, 38%);
+  --DarkGrayishBlue: hsl(217, 19%, 24%);
+  --DarkBlue: hsl(218, 23%, 16%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: var(--DarkBlue);
+  font-family: "Manrope", sans-serif;
+  font-size: 20px;
+  padding: 30px;
+}
+
+.container {
+  max-width: 500px;
+  background-color: var(--DarkGrayishBlue);
+  padding: 50px;
+  border-radius: 1rem;
+}
+
+h1 {
+  color: var(--LightCyan);
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+p {
+  color: var(--LightCyan);
+  margin-bottom: 1rem;
+}
+
+input {
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  color: var(--DarkBlue);
+  background-color: var(--NeonGreen);
+  border-radius: 1rem;
+  border: none;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.result.show {
+  display: block;
+}
+
+.result {
+  display: none;
+}
+
+.quiz.hide {
+  display: none;
+}
+
+button:disabled {
+  background-color: var(--LightCyan);
+  cursor: not-allowed;
+}
